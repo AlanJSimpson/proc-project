@@ -1,4 +1,5 @@
-import { Container, ThemeProvider } from '@mui/material';
+import { Container } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
 
 import './App.css';
 import Header from './components/header/Header';

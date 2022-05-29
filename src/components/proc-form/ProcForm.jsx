@@ -29,10 +29,18 @@ export default function ProcForm() {
   return (
     <Box className='form-box'>
       <Box className='form-titles'>
-        <Typography component='h1' variant='h3'>
+        <Typography
+          component='h1'
+          variant='h3'
+          fontFamily={'Cormorant Garamond'}
+        >
           PROC - Protocolo de observação comportamental
         </Typography>
-        <Typography component='h2' variant='h4'>
+        <Typography
+          component='h2'
+          variant='h4'
+          fontFamily={'Cormorant Garamond'}
+        >
           Avaliação de linguagem e aspectos cognitivos infantis
         </Typography>
       </Box>

@@ -2,6 +2,13 @@
   width: 100%;
 }
 
+.form-box {
+  background-color: white;
+  border-radius: 15px;
+  padding: 50px;
+  margin-bottom: 2rem;
+}
+
 .form-titles {
   margin-bottom: 3rem;
 }
