@@ -44,8 +44,8 @@ export default function ProcChart({ HC, ADC, CLO, total }) {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Bar dataKey='Pontuação máxima' fill='#8884d8' />
-      <Bar dataKey='Pontuação alcançada' fill='#82ca9d' />
+      <Bar dataKey='Pontuação máxima' fill='#AB4A30' />
+      <Bar dataKey='Pontuação alcançada' fill='#D46A40' />
     </BarChart>
   );
 }
