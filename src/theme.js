@@ -11,7 +11,6 @@ export default createTheme({
     secondary: {
       main: '#D46A40',
       // dark: will be calculated from palette.secondary.main,
-      contrastText: '#ffcc00',
     },
 
     // Used by `getContrastText()` to maximize the contrast between

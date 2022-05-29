@@ -16,22 +16,22 @@ const TOTAL_CONSTANTE = 200;
 export default function ProcChart({ HC, ADC, CLO, total }) {
   const data = [
     {
-      name: 'Habilidade comunicativa',
+      name: 'H. Comunicativas',
       'Pontuação máxima': HC_CONSTANTE,
       'Pontuação alcançada': HC,
     },
     {
-      name: 'Compreensão da linguagem oral',
-      'Pontuação máxima': ADC_CONSTANTE,
-      'Pontuação alcançada': ADC,
-    },
-    {
-      name: 'Aspecto do desenvolvimento cognitivo',
+      name: 'C. Linguagem Oral',
       'Pontuação máxima': CLO_CONSTANTE,
       'Pontuação alcançada': CLO,
     },
     {
-      name: 'Total da pontuação',
+      name: 'A.D. Cognitivo',
+      'Pontuação máxima': ADC_CONSTANTE,
+      'Pontuação alcançada': ADC,
+    },
+    {
+      name: 'Total',
       'Pontuação máxima': TOTAL_CONSTANTE,
       'Pontuação alcançada': total,
     },

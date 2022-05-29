@@ -1,0 +1,13 @@
+.footer-box {
+  background-color: #ffc9b9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  margin-top: 4rem;
+}
+
+.social-media-box {
+  display: flex;
+  flex-direction: column;
+}
