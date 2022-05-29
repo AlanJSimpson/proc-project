@@ -1,0 +1,12 @@
+.proc-form-item {
+  width: 100%;
+}
+
+.form-titles {
+  margin-bottom: 3rem;
+}
+.box-chart {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
