@@ -1,5 +1,5 @@
 import { Box, Grid, TextField, Typography } from '@mui/material';
-import { useEffect, useState } from 'react';
+import { ChangeEventHandler, useEffect, useState } from 'react';
 import ProcChart from '../proc-chart/ProcChart';
 
 import './procForm.css';
@@ -14,15 +14,15 @@ export default function ProcForm() {
     setInputTotalValues(Number(inputHC) + Number(inputCLO) + Number(inputADC));
   }, [inputHC, inputCLO, inputADC]);
 
-  const handleChangeHC = (e) => {
+  const handleChangeHC: ChangeEventHandler<HTMLInputElement> = (e) => {
     setInputHC(e.target.value);
   };
 
-  const handleChangeCLO = (e) => {
+  const handleChangeCLO: ChangeEventHandler<HTMLInputElement> = (e) => {
     setInputCLO(e.target.value);
   };
 
-  const handleChangeADC = (e) => {
+  const handleChangeADC: ChangeEventHandler<HTMLInputElement> = (e) => {
     setInputADC(e.target.value);
   };
 

@@ -13,7 +13,17 @@ const CLO_CONSTANTE = 60;
 const ADC_CONSTANTE = 70;
 const TOTAL_CONSTANTE = 200;
 
-export default function ProcChart({ HC, ADC, CLO, total }) {
+export default function ProcChart({
+  HC,
+  ADC,
+  CLO,
+  total,
+}: {
+  HC: number;
+  ADC: number;
+  CLO: number;
+  total: number;
+}) {
   const data = [
     {
       name: 'H. Comunicativas',
