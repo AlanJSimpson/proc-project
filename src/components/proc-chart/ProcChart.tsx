@@ -19,9 +19,9 @@ export default function ProcChart({
   CLO,
   total,
 }: {
-  HC: number;
-  ADC: number;
-  CLO: number;
+  HC: number | string;
+  ADC: number | string;
+  CLO: number | string;
   total: number;
 }) {
   const data = [
