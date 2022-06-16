@@ -4,7 +4,7 @@ import ProcChart from '../proc-chart/ProcChart';
 
 import './procForm.css';
 
-export default function ProcForm() {
+export default function ProcForm(): JSX.Element {
   const [inputHC, setInputHC] = useState('');
   const [inputCLO, setInputCLO] = useState('');
   const [inputADC, setInputADC] = useState('');

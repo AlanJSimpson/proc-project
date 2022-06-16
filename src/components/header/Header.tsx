@@ -2,7 +2,7 @@ import { Box } from '@mui/material';
 import logoMaysa from '../../assets/images/logo-em-pe.png';
 import './header.css';
 
-export default function header() {
+export default function header(): JSX.Element {
   return (
     <Box className='header-box'>
       <img
