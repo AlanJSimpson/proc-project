@@ -5,25 +5,25 @@ import ProcChart from '../proc-chart/ProcChart';
 import './procForm.css';
 
 export default function ProcForm(): JSX.Element {
-  const [inputHC, setInputHC] = useState('');
-  const [inputCLO, setInputCLO] = useState('');
-  const [inputADC, setInputADC] = useState('');
+  const [inputHC, setInputHC] = useState(0);
+  const [inputCLO, setInputCLO] = useState(0);
+  const [inputADC, setInputADC] = useState(0);
   const [inputTotalValues, setInputTotalValues] = useState(0);
 
   useEffect(() => {
-    setInputTotalValues(Number(inputHC) + Number(inputCLO) + Number(inputADC));
+    setInputTotalValues(inputHC + inputCLO + inputADC);
   }, [inputHC, inputCLO, inputADC]);
 
   const handleChangeHC: ChangeEventHandler<HTMLInputElement> = (e) => {
-    setInputHC(e.target.value);
+    setInputHC(Number(e.target.value));
   };
 
   const handleChangeCLO: ChangeEventHandler<HTMLInputElement> = (e) => {
-    setInputCLO(e.target.value);
+    setInputCLO(Number(e.target.value));
   };
 
   const handleChangeADC: ChangeEventHandler<HTMLInputElement> = (e) => {
-    setInputADC(e.target.value);
+    setInputADC(Number(e.target.value));
   };
 
   return (
@@ -56,6 +56,7 @@ export default function ProcForm(): JSX.Element {
             variant='standard'
             value={inputHC}
             onInput={handleChangeHC}
+            type='number'
           />
         </Grid>
         <Grid item xs={4}>
@@ -65,6 +66,7 @@ export default function ProcForm(): JSX.Element {
             value={inputCLO}
             onInput={handleChangeCLO}
             variant='standard'
+            type='number'
           />
         </Grid>
         <Grid item xs={5}>
@@ -74,6 +76,7 @@ export default function ProcForm(): JSX.Element {
             variant='standard'
             value={inputADC}
             onInput={handleChangeADC}
+            type='number'
           />
         </Grid>
 
@@ -81,6 +84,7 @@ export default function ProcForm(): JSX.Element {
           <TextField
             label='Total da pontuação'
             value={inputTotalValues}
+            type='number'
             InputProps={{
               readOnly: true,
             }}
