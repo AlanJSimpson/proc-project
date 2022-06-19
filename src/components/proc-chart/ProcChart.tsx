@@ -43,22 +43,22 @@ export default function ProcChart({
   const data = [
     {
       name: 'H. Comunicativas',
-      'Pontuação máxima': HC_CONSTANTE,
+      'Pontuação máxima': 100,
       'Pontuação alcançada': Math.round((HC * 100) / HC_CONSTANTE),
     },
     {
       name: 'C. Linguagem Oral',
-      'Pontuação máxima': CLO_CONSTANTE,
+      'Pontuação máxima': 100,
       'Pontuação alcançada': Math.round((CLO * 100) / CLO_CONSTANTE),
     },
     {
       name: 'A.D. Cognitivo',
-      'Pontuação máxima': ADC_CONSTANTE,
-      'Pontuação alcançada': Math.round((ADC * 100) / CLO_CONSTANTE),
+      'Pontuação máxima': 100,
+      'Pontuação alcançada': Math.round((ADC * 100) / ADC_CONSTANTE),
     },
     {
       name: 'Total',
-      'Pontuação máxima': TOTAL_CONSTANTE,
+      'Pontuação máxima': 100,
       'Pontuação alcançada': Math.round((total * 100) / TOTAL_CONSTANTE),
     },
   ];
@@ -68,7 +68,7 @@ export default function ProcChart({
       <BarChart width={730} height={250} data={data} ref={barChart}>
         <CartesianGrid strokeDasharray='3 3' />
         <XAxis dataKey='name' />
-        <YAxis tickFormatter={(tick, index) => index * 25 + '%'} />
+        <YAxis tickFormatter={(_tick, index) => index * 25 + '%'} />
         <Tooltip />
         <Legend />
         <Bar dataKey='Pontuação máxima' fill='#AB4A30' />
